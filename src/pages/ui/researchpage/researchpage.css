@@ -1,0 +1,53 @@
+
+.research-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #fff;
+    background-image: url('../../../assets/images/background.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .content-container {
+    max-width: 600px;
+    color: #00553b;
+  }
+
+  .content-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+
+  .content-container p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-left: 20px;
+    position: relative;
+  }
+  
+  .content-container p::before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #00553b;
+    position: absolute;
+    left: -6px;
+    top: 0;
+  }
+  
+
+  .magnifying-glass {
+    width: 567.78px;
+    height: 393.53px;
+    margin-left: 50px;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+    margin-right: 100px;
+  }
+  

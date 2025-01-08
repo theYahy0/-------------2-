@@ -1,0 +1,154 @@
+.scientists-container {
+    background-color: #F5F5DC;
+    color: rgba(0, 95, 75, 1);
+    padding: 40px 20px;
+  }
+  
+  .title {
+    font-size: 36px;
+    color: #005F4B;
+    margin-bottom: 20px;
+    left: 0;
+  }
+  .filter-container {
+    color: rgba(0, 95, 75, 1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-top: -62px;
+    position: relative; 
+  }
+  
+  .filter {
+    margin: 0;
+    font-size: 22px; 
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  .filter::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px; 
+    background-color: #005F4B; 
+    position: absolute;
+    bottom: -6px; 
+    left: 0;
+  }
+  
+  .appreciation-text{
+    color: black;
+  }
+
+  .filter-button {
+    background: none;
+    border: none;
+    color: #13a389;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .scientists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    z-index: 1;
+  }
+  
+  .scientist-card {
+    
+    text-align: left;
+  }
+  
+  .scientist-image {
+    width: 100%;
+    height: auto;
+   
+  }
+  
+  .scientist-name {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .research-count {
+    background-color: #005F4B;
+    text-align: center;
+    margin-top: 50px;
+    border: none;
+    padding: 20px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .decorative-pattern {
+    background-image: url('../../assets/images/scientist2.png');
+    height: 100px;
+    background-size: cover;
+    margin-top: 20px;
+  }
+
+  .research-button{
+    width: 100%;
+    padding: 15px;
+    background-color: #005F4B;
+    color: white;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 115px;
+    left: 18px;
+    right: 18px; 
+    height: 47%; 
+    border-radius: 10px;
+    border: 2px solid #005F4B; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    z-index: 2; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    padding: 40px 50px; 
+}
+
+.overlay-line {
+    position: relative; 
+    width: 100%;
+    height: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.overlay-line::before,
+.overlay-line::after {
+    content: "";
+    height: 1px;
+    background-color: #005F4B;
+    opacity: 0.8;
+    width: 45%; 
+}
+
+
+
+
+.scientists-container {
+    position: relative; 
+    z-index: 1;
+}
+
+.scientists-grid {
+ 
+    pointer-events: none;
+}
+
+.scientists-grid.active {
+    filter: none; 
+    pointer-events: auto;
+}

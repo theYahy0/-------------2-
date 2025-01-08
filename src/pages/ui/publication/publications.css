@@ -1,0 +1,19 @@
+.publications {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(245, 245, 220, 1);
+  }
+  
+  .publications__title {
+    text-align: left;
+    color: #007a37;
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
+  
+  .publications__list {
+    display: flex;
+    flex-direction: column;
+  }
+  
